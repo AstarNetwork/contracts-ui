@@ -9,12 +9,12 @@ import { classes } from 'ui/util';
 
 const options = [
   {
-    label: 'Local Node',
-    value: RPC.LOCAL,
-  },
-  {
     label: 'Contracts (Rococo)',
     value: RPC.CONTRACTS,
+  },
+  {
+    label: 'Local Node',
+    value: RPC.LOCAL,
   },
 ];
 
@@ -35,7 +35,7 @@ export function NetworkAndUser() {
           navigate(`/?rpc=${e}`);
         }}
         options={options}
-        value={options.find(o => o.value === endpoint)?.value || 'ws://127.0.0.1:9944'}
+        value={options.find(o => o.value === endpoint)?.value || RPC.CONTRACTS}
       />
     </div>
   );
