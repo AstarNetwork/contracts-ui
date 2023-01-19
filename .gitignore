@@ -126,3 +126,6 @@ dist
 .DS_Store
 cypress/screenshots
 cypress/videos
+
+# Firebase
+./firebase
