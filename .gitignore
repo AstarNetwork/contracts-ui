@@ -128,4 +128,4 @@ cypress/screenshots
 cypress/videos
 
 # Firebase
-./firebase
+.firebase/
